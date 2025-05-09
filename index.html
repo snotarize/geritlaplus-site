@@ -4,24 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geritla Plus LLC</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; }
-    header, footer { background-color: #3b3b98; color: white; padding: 1rem; text-align: center; }
+    header, footer { background-color: #3b3b98; color: white; padding: 0.5rem; text-align: center; }
     nav { background-color: #f1f1f1; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000; }
     nav a { margin: 0 1rem; text-decoration: none; color: #3b3b98; font-weight: bold; }
     section { padding: 2rem; }
     h1, h2 { color: #3b3b98; }
-    .contact-info { background-color: #f9f9f9; padding: 1rem; border-radius: 5px; }
-    .logo { max-width: 150px; margin: 1rem auto; display: block; }
-    .contact-button { display: inline-block; padding: 10px 20px; background-color: #3b3b98; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+    .services { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2rem; }
+    .service-card { background: #f1f1f1; border-radius: 8px; padding: 1rem; width: 250px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .service-card h3 { margin-top: 0; color: #3b3b98; }
+    .service-icon { font-size: 40px; margin-bottom: 10px; color: #3b3b98; }
+    .contact-info { background-color: #f9f9f9; padding: 1rem; border-radius: 5px; text-align: center; }
+    .logo { max-width: 120px; margin: 0.5rem auto; display: block; }
+    .contact-button, .quote-button { display: inline-block; padding: 10px 20px; background-color: #3b3b98; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
     #home {
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
       color: white;
-      padding: 6rem 2rem;
+      padding: 8rem 2rem;
       text-align: center;
     }
-    #home h2, #home p { color: white; }
+    #home h2 { color: white; font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; }
+    #home p { color: white; font-size: 1.2rem; }
   </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -33,19 +40,59 @@
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
+    <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="home">
     <h2>Welcome to Geritla Plus LLC</h2>
-    <p>We are a Florida-based business committed to helping clients succeed in notary services, e-commerce, and real estate consulting. Geritla Plus LLC proudly owns and operates <strong>SafeNotarize</strong> and <strong>GeritlaStore</strong>.</p>
-    <p>Whether you're looking to notarize documents online, explore real estate opportunities, or build your business credit, we’re here to support your goals.</p>
+    <p>Geritla Plus LLC is your trusted partner for business creation support, professional website development, real estate consulting, online notarization, and e-commerce solutions. We help individuals and businesses transform ideas into successful realities across multiple industries.</p>
+    <p>Whether you're launching a business, building your online presence, investing in real estate, or managing e-commerce opportunities, Geritla Plus is committed to providing expertise and service every step of the way.</p>
+    <a href="mailto:info@geritlaplus.com?subject=Request%20a%20Quote" class="quote-button">Get a Quote</a>
   </section>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>Geritla Plus LLC was created to lead and support multiple ventures with integrity and focus. Through our DBAs, SafeNotarize and GeritlaStore, we serve clients nationwide with accessible, digital-friendly services.</p>
-    <p>We’re also actively expanding into real estate consulting — offering insights, guidance, and tools to help investors and first-time buyers make confident decisions. Our structure supports flexibility and growth as we build business credibility and access funding opportunities.</p>
+    <p>Geritla Plus LLC is a Florida-based company dedicated to empowering entrepreneurs, investors, and everyday individuals to achieve their goals. We proudly operate multiple divisions:</p>
+    <ul>
+      <li><strong>Business Creation Assistance:</strong> Guiding you through forming LLCs, DBAs, and building business credit.</li>
+      <li><strong>Website Development:</strong> Crafting clean, functional websites that strengthen your brand.</li>
+      <li><strong>Real Estate Consulting:</strong> Providing strategic advice for investors, buyers, and sellers.</li>
+      <li><strong>Online Notarization:</strong> Offering secure and easy-to-access notary services through <a href="https://www.safenotarize.com" target="_blank" style="color: #3b3b98; text-decoration: underline;">SafeNotarize</a>.</li>
+      <li><strong>E-commerce Operations:</strong> Running retail ventures through GeritlaStore and helping others succeed online.</li>
+    </ul>
+    <p>Our mission is simple: Empower your journey with trusted support, innovative solutions, and a relentless commitment to your success.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>Business Creation</h3>
+        <p>LLC and DBA formation, EIN setup, and business credit building to launch your vision.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Website Development</h3>
+        <p>Custom websites to establish your brand online with ease and professionalism.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-building"></i></div>
+        <h3>Real Estate Consulting</h3>
+        <p>Expert guidance for investors and buyers to maximize property opportunities.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-file-signature"></i></div>
+        <h3>Online Notarization</h3>
+        <p>Remote notary services through <a href="https://www.safenotarize.com" target="_blank" style="color: #3b3b98; text-decoration: underline;">SafeNotarize</a>, fast and legally compliant.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+        <h3>E-commerce Solutions</h3>
+        <p>Operate your online business smoothly with product sourcing and digital sales support.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
@@ -59,7 +106,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Geritla Plus LLC. All rights reserved.</p>
+    <p>&copy; 2022 Geritla Plus LLC. All rights reserved.</p>
   </footer>
 </body>
 </html>
